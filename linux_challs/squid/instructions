@@ -1,0 +1,10 @@
+sudo docker build . -t priv
+sudo docker run -it priv /bin/bash
+
+
+cd SSH_Container
+
+sudo docker build . -t taskpriv
+sudo docker run -it -v /var/run/docker.sock:/var/run/docker.sock -d -p 10000:1234 taskpriv
+
+login into the container and start the ssh service
