@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+int main(int argc, char *argv[], char * envp[]){
+        int a = 1000;
+        int b =  500;
+        int c =   29;
+        int d = a + b + c;
+
+        char flag[50] = "52C<r%uLt?G`C_?>b?ED02C60r__{N";
+        char new[10];
+        sprintf(new, "%d", d);
+if(strcmp(getenv("GETFLAG"),new) == 0){
+printf("%s\n",flag);
+}
+else{ printf("Try Harder\n");
+}
+}
